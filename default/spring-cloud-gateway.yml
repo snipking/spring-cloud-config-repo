@@ -1,0 +1,7 @@
+zuul:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  routes:
+    homework:
+      path: /api/service-a/**
+      serviceId: spring-cloud-service-a
+      stripPrefix: false
